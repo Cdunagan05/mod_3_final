@@ -20,6 +20,5 @@ RSpec.describe "Items CRUD API" do
     expect(parsed_items["name"]).to eq("REI")
     expect(parsed_items["description"]).to eq("Sports")
     expect(parsed_items["image_url"]).to eq("we do sport")
-    expect(parsed_items["created_at"]).to eq(nil)
   end
 end
