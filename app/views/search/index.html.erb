@@ -1,1 +1,9 @@
-<%= @rep["total"] %> Total Stores!
+Total Stores!
+
+<% @stores.each_with_index do |store, index| %>
+  <h2><%= index+1 %>. Store Name: <%= store.longName %></h2><br>
+  Distance from you: <%= store.distance %><br>
+  City: <%= store.city %><br>
+  Phone Number: <%= store.phone %><br>
+  Store Type: <%= store.storeType %><br>
+<% end %>
