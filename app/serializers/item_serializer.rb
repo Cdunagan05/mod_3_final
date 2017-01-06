@@ -1,0 +1,1 @@
+class ItemSerializer < ActiveModel::Serializer
